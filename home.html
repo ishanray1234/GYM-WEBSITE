@@ -15,17 +15,28 @@
         }
         .left{
             display: inline-block;
-            border: 2px solid blue;
+            /* border: 2px solid blue; */
             position: absolute;
             top: 10px;
             left: 50px;
+        }
+        .left img{
+            /* height: 25px; */
+            width: 50px;
+        }
+        .names{
+            position: absolute;
+            top:5px;
+            left:60px;
+            font-size: 20px;
+            /* display: inline-block; */
         }
         .mid{
             /* display: inline-block; */
             display: block;
             margin: 10px auto;
             width: 33%;
-            border: 2px solid blue;
+            /* border: 2px solid blue; */
         }
         .right
         {
@@ -33,7 +44,19 @@
             top: 10px;
             right: 50px;
             display: inline-block;
-            border: 2px solid blue;
+            /* border: 2px solid blue; */
+        }
+        .btn{
+            color: white;
+            background-color: black;
+            margin: 0px 5px;
+            padding: 8px 15px;
+            /* border: 2px solid blue; */
+            border-radius: 10px;
+            font-size: 15px;
+        }
+        .btn:hover{
+            background-color: gray;
         }
         .navbar{
             display: inline-block;
@@ -45,27 +68,73 @@
         .navbar li a{
             color: whitesmoke;
             text-decoration: none;
+            font-size: 20px;
+            padding: 20px;
         }
+        .navbar li a:hover,.navbar li a:active{
+            text-decoration: underline;
+            color: blue;
+        }
+        .container{
+            border: 2px solid white;
+            padding: 75px;
+            margin: 150px 80px;
+            width: 25%;
+            border-radius: 20px;
+        }
+        .forms input{
+            font-size: 10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            /* text-align: 30px; */
+            font-weight: 100;
+            display: block;
+            width: 150px;
+            padding: 10px;
+            border: 2px solid black;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
     </style>
 </head>
 <body>
     <header class="header">
         <div class="left">
-            hi
+            <img src="gym-1048852_1280.png" alt="">
+            <div class="names">MUSCLE SHOP</div>
         </div>
 
         <div class="mid">
             <ul class="navbar">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Gym</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#" >Home</a></li>
+                <li><a href="#" >Gym</a></li>
+                <li><a href="#" >About Us</a></li>
+                <li><a href="#" >Contact Us</a></li>
             </ul>
         </div>
 
         <div class="right">
-            hi
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
         </div>
     </header>
+    <div class="container">
+        <h1>JOIN THE GYM NOW!!!</h1>
+        <form action="test.php">
+            <div class="forms">
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="forms">
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="forms">
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="forms">
+                <input type="text" placeholder="Enter your name">
+            </div>
+            <button class="btn">SUBMIT</button>
+        </form>
+    </div>
 </body>
 </html>
